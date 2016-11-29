@@ -18,15 +18,25 @@ class ViewController2: UIViewController {
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0
     
+    @IBAction func BackButton(_ sender: AnyObject) {
+        back(imgString as AnyObject)
+    }
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        let gesture = UITapGestureRecognizer(target:self, action: #selector(ViewController2.back(_:)))
-        self.view.addGestureRecognizer(gesture)
+        
+        //let gesture = UITapGestureRecognizer(target:self, action: #selector(ViewController2.back(_:)))
+        //self.view.addGestureRecognizer(gesture)
         // Screen Size の取得
         screenWidth = self.view.bounds.width
         screenHeight = self.view.bounds.height
         img_display(imgString)
+
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

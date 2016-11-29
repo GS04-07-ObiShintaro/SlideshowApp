@@ -34,12 +34,24 @@
                     <view key="view" contentMode="scaleToFill" id="1Fr-kd-OvD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7p-2C-5U8">
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="wqi-Ar-Qo6" eventType="touchUpInside" id="Em4-k1-he4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L7p-2C-5U8" firstAttribute="top" secondItem="J5O-EN-hcZ" secondAttribute="bottom" constant="8" id="Kix-9L-KfD"/>
+                            <constraint firstItem="L7p-2C-5U8" firstAttribute="centerX" secondItem="1Fr-kd-OvD" secondAttribute="centerX" id="zS8-jO-brB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2q-zB-tye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="139"/>
+            <point key="canvasLocation" x="928.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

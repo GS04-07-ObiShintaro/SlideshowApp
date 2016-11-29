@@ -153,7 +153,7 @@ class ViewController: UIViewController {
     {
         if(i == 0)
         {
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onUpdate(_:)), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.onUpdate(_:)), userInfo: nil, repeats: true)
             buttonPlay.setTitle("||", for:UIControlState.normal)
             
             buttonPlus.isEnabled = false
